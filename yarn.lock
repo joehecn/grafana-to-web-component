@@ -2015,6 +2015,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@r2wc/core@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@r2wc/core@npm:1.0.0"
+  checksum: 541d03241d14450d383242dc263ef955f54ba52e8220712ca10744b72eb5bc8fc8a60eabfc5602c05f9ae2f3ee47108aa436cf30db5265ad16f743df15968d3b
+  languageName: node
+  linkType: hard
+
+"@r2wc/react-to-web-component@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@r2wc/react-to-web-component@npm:2.0.2"
+  dependencies:
+    "@r2wc/core": ^1.0.0
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 144a4f9ea48b4b6bc42550d55284b89f235a33a66cad2da2444e6a999ad32c3a7c9a91c15c4daabef8e6d6b8565b82a872c3bf6e9d9f8fac4ade71fee4fcfaca
+  languageName: node
+  linkType: hard
+
 "@radix-ui/number@npm:1.0.1":
   version: 1.0.1
   resolution: "@radix-ui/number@npm:1.0.1"
@@ -2583,7 +2602,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/pluginutils@npm:^5.0.2":
+"@rollup/plugin-typescript@npm:^11.1.4":
+  version: 11.1.4
+  resolution: "@rollup/plugin-typescript@npm:11.1.4"
+  dependencies:
+    "@rollup/pluginutils": ^5.0.1
+    resolve: ^1.22.1
+  peerDependencies:
+    rollup: ^2.14.0||^3.0.0
+    tslib: "*"
+    typescript: ">=3.7.0"
+  peerDependenciesMeta:
+    rollup:
+      optional: true
+    tslib:
+      optional: true
+  checksum: 662647ef92dc7af2b502ce5c871fc58151ca9660e5b9e88c42cc9fa257e8f453bf14b9b82793ab191c7c200112f1a886d7493727e3be847b1a94f9b68b21e503
+  languageName: node
+  linkType: hard
+
+"@rollup/pluginutils@npm:^5.0.1, @rollup/pluginutils@npm:^5.0.2":
   version: 5.0.4
   resolution: "@rollup/pluginutils@npm:5.0.4"
   dependencies:
@@ -6639,6 +6677,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "grafana-to-web-component@workspace:."
   dependencies:
+    "@r2wc/react-to-web-component": ^2.0.2
+    "@rollup/plugin-typescript": ^11.1.4
     "@storybook/addon-essentials": ^7.4.5
     "@storybook/addon-interactions": ^7.4.5
     "@storybook/addon-links": ^7.4.5
@@ -6661,6 +6701,7 @@ __metadata:
     storybook: ^7.4.5
     typescript: ^5.0.2
     vite: ^4.4.5
+    vite-plugin-css-injected-by-js: ^3.3.0
   languageName: unknown
   linkType: soft
 
@@ -9241,7 +9282,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.10.0, resolve@npm:^1.14.2, resolve@npm:^1.17.0":
+"resolve@npm:^1.10.0, resolve@npm:^1.14.2, resolve@npm:^1.17.0, resolve@npm:^1.22.1":
   version: 1.22.6
   resolution: "resolve@npm:1.22.6"
   dependencies:
@@ -9254,7 +9295,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.6
   resolution: "resolve@patch:resolve@npm%3A1.22.6#~builtin<compat/resolve>::version=1.22.6&hash=c3c19d"
   dependencies:
@@ -10370,6 +10411,15 @@ __metadata:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: ae0123222c6df65b437669d63dfa8c36cee20a504101b2fcd97b8bf76f91259c17f9f2b4d70a1e3c6bbcee7f51b28392833adb6b2770b23b01abec84e369660b
+  languageName: node
+  linkType: hard
+
+"vite-plugin-css-injected-by-js@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "vite-plugin-css-injected-by-js@npm:3.3.0"
+  peerDependencies:
+    vite: ">2.0.0-0"
+  checksum: bacc78de4849795415d3175d700dc93ff7698e1ba4e47bb6d3b55c5f6d76df04c8bae7ae9bc59fd3be0097ebe25707f88d1ed6cfac4ccbb772baac93c87395f3
   languageName: node
   linkType: hard
 
