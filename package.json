@@ -1,6 +1,5 @@
 {
   "name": "grafana-to-web-component",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "main": "./dist/index.umd.js",
@@ -29,7 +28,9 @@
     "build": "node scripts/build.js",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "@r2wc/react-to-web-component": "^2.0.2",
