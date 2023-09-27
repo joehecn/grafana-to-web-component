@@ -32,12 +32,10 @@
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "dependencies": {
+  "devDependencies": {
     "@r2wc/react-to-web-component": "^2.0.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
+    "react-dom": "^18.2.0",
     "@rollup/plugin-typescript": "^11.1.4",
     "@storybook/addon-essentials": "^7.4.5",
     "@storybook/addon-interactions": "^7.4.5",
